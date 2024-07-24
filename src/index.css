@@ -1,13 +1,57 @@
-body {
+/* Importing Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Radio+Canada+Big:ital,wght@0,400..700;1,400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400..700&display=swap'); /* Ensure you import the Outfit font */
+
+/* Applying the font to the body and specific elements */
+* {
+  box-sizing: border-box;
+  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Outfit', sans-serif; /* Correct font family name */
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  background: black;
+}
+
+h1, h4, p, a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* navbar.css */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  padding: 10px 20px;
+}
+
+.header .logo h1 {
+  color: #fff; /* Ensures logo color is white */
+  margin: 0;
+  text-decoration: none; /* Ensures no underline on logo */
+  font-family: 'Radio Canada Big', sans-serif; /* Apply the specific font to the logo */
+}
+
+.nav-menu {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-menu li {
+  margin: 0 10px;
+}
+
+.nav-menu li a {
+  color: #fff;
+  text-decoration: none; /* Ensures no underline on links */
+  font-size: 16px;
+}
+
+.nav-menu li a:hover {
+  color: #ddd; /* Changes link color on hover */
 }

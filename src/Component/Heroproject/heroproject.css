@@ -1,0 +1,41 @@
+/* src/components/Heroproject.css */
+/* div {
+    padding: 20px;
+  } */
+  
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: pink;
+    font-size: 40px;
+    font-style: italic;
+  }
+  
+  p {
+    text-align: center;
+    display: flex;
+    justify-content: center; /* Center the items horizontally */
+    align-items: center;
+    margin: 10px 0;
+    font-size: 1.1em;
+  }
+  p svg {
+    margin: 10px 20px 10px 0; /* Margin adjustments for stacked layout */
+  }
+
+  
+  .fa-icon {
+    margin-right: 10px; /* Adjusted for better spacing */
+  }
+  
+  @media (max-width: 768px) {
+    p {
+      flex-direction: column; /* Stack the icon and text vertically on smaller screens */
+      font-size: 1em; /* Adjust font size for smaller screens */
+    }
+  
+    .fa-icon {
+      margin: 0 0 10px 0; /* Margin adjustments for stacked layout */
+    }
+  }
+  

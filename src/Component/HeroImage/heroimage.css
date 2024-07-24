@@ -1,0 +1,113 @@
+body{
+  background-color: black;
+  
+  
+}
+
+.hero-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  height: 70vh;
+  padding: 20px; 
+}
+
+.hero-text {
+  flex: 1;
+  padding: 20px;
+}
+
+.hello-title {
+  font-size: 40px; /* Font size for "Hello" */
+  margin-bottom: 10px;
+  font-style: italic; 
+ color: rgb(218, 84, 84);
+  
+}
+
+.name-title {
+  font-size: 40px; 
+  margin-bottom: 10px;
+  color: pink; 
+  text-decoration: underline;
+}
+
+.hero-text p{
+  font-size: 22px;
+  font-style: var(20px);
+  color: #fff;
+}
+
+ .hero-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  
+  text-align: center;
+  background-image: url('https://cdn.pixabay.com/photo/2016/03/26/13/09/workspace-1280538_1280.jpg');
+  background-size: cover;
+  background-position: center;
+} 
+.btn {
+  display: inline-block;
+  margin-top: 20px; /* Adjust this value to your desired spacing */
+  padding: 10px 20px;
+  font-size: 16px;
+  color: white;
+  background-color: rgb(218, 84, 84);
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #fff;
+  color: black;
+}
+.btn-light{
+  display: inline-block;
+  margin: 20px;
+  margin-top: 20px; /* Adjust this value to your desired spacing */
+  padding: 10px 20px;
+  font-size: 16px;
+  color: black;
+  background-color: pink;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+.btn-light:hover {
+  background-color: black;
+  color: #fff;
+}
+@media (max-width: 768px) {
+  .hero-container {
+    flex-direction: column;
+    height: auto;
+    padding: 10px;
+  }
+
+  .hero-text {
+    padding: 10px;
+  }
+
+  .hello-title {
+    font-size: 30px; /* Adjusted font size */
+  }
+
+  .name-title {
+    font-size: 35px; /* Adjusted font size */
+  }
+
+  .hero-text p {
+    font-size: 16px; /* Adjusted font size */
+  }
+
+  .btn, .btn-light {
+    margin-top: 10px;
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+}
